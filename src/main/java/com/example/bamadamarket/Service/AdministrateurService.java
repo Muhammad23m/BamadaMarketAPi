@@ -16,7 +16,7 @@ public class AdministrateurService {
         public AdministrateurService(AdministrateurRepository administrateurRepository) {
             this.administrateurRepository = administrateurRepository;
         }
-
+        //Fonction
          public Administrateur connectionAdministrateur(String email, String motDePasse) {
         Administrateur user = administrateurRepository.findByEmailAndMotDePasse(email, motDePasse);
         if (user == null) {
